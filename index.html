@@ -4,29 +4,27 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>10HW</title>
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-BAVwPnJE.css">
+    <title>11HW</title>
+    <script type="module" crossorigin src="/goit-js-hw-10/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-Cq7ZUixy.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-DumFYO8Z.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/index-K3SCen4V.css">
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-link {=$highlight-act}" href="./1-timer.html"
-                >Timer</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link {=$highlight-curr}" href="./2-snackbar.html"
-                >Snackbar</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <main></main>
+    <main>
+      <form class="form">
+        <label>
+          <input
+            type="text"
+            name="search-text"
+            placeholder="Search images..."
+            required
+          />
+        </label>
+        <button type="submit">Search</button>
+      </form>
+      <span class="loader is-hidden"></span>
+      <ul class="gallery"></ul>
+    </main>
   </body>
 </html>
